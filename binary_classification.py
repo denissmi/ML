@@ -70,8 +70,8 @@ plt.clf()
 acc_values = history_dict["accuracy"]
 val_acc_values = history_dict["val_accuracy"]
 
-plt.plot(epochs, history_dict["accuracy"], "bo", label="Training acc")
-plt.plot(epochs, history_dict["val_accuracy"], "b", label="Validation acc")
+plt.plot(epochs, acc_values, "bo", label="Training acc")
+plt.plot(epochs, val_acc_values, "b", label="Validation acc")
 plt.title("Training and validation accuracy")
 plt.xlabel("Epochs")
 plt.ylabel("Accuracy")
